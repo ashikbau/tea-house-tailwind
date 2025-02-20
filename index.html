@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/662d3e33d2.js" crossorigin="anonymous"></script>
     <!-- Tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+       <!-- tailwind cdn -->
+       <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -19,12 +21,15 @@
               colors: {
                 clifford: '#da373d',
               },
+              fontFamily:{
+            manrope: ['Manrope', 'sans-serif'],
+              },
             },
           },
         }
       </script>
 </head>
-<body>
+<body class="font-manrope">
     <!-- main container -->
      <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <header class="lg:flex pt-10 mb-20">
@@ -296,6 +301,7 @@
 
        </section>
       </main>
+
        <!-- Footer Section -->
     <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
       <div class="w-9/12 mx-auto">
